@@ -1,0 +1,137 @@
+body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+}
+
+.resume-container {
+          display: flex;
+          max-width: 1200px;
+          margin: 20px auto;
+          background: white;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+          display: block;
+          /* Make the image a block element */
+          margin: 0 auto 15px;
+          /* Center the image and add space below */
+          width: 150px;
+          /* Set a fixed width for the profile picture */
+          height: auto;
+          /* Maintain aspect ratio */
+          border-radius: 50%;
+          /* Make the image circular */
+}
+
+.sidebar {
+          background-color: #f8f9fa;
+          /* Light background for the sidebar */
+          padding: 20px;
+          /* Add some padding */
+          border-radius: 5px;
+          /* Rounded corners */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+          list-style-type: none;
+          /* Remove default list styling */
+          padding: 0;
+          /* Remove padding */
+}
+
+.skills-list li {
+          background: #e9ecef;
+          /* Light grey background for skills */
+          margin: 5px 0;
+          /* Space between skills */
+          padding: 10px;
+          /* Padding for each skill */
+          border-radius: 3px;
+          /* Rounded corners for skills */
+}
+
+.sidebar .profile-picture {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 10px;
+}
+
+.sidebar h1 {
+          font-size: 20px;
+          margin-bottom: 5px;
+}
+
+.sidebar address {
+          font-style: normal;
+          color: #333;
+          font-size: 14px;
+          line-height: 1.6;
+}
+
+.content {
+          padding: 30px;
+          width: 70%;
+}
+
+.header {
+          text-align: right;
+}
+
+.header .date {
+          font-size: 14px;
+          color: #555;
+}
+
+.header h2 {
+          margin: 5px 0;
+}
+
+.body p,
+.body ul {
+          margin-bottom: 15px;
+          color: #333;
+          line-height: 1.6;
+}
+
+.body ul {
+          list-style: disc;
+          padding-left: 20px;
+}
+
+.body ul li {
+          margin-bottom: 10px;
+}
+
+
+
+.skills-list {
+          margin: 10px 0;
+}
+
+.skill {
+          margin-bottom: 10px;
+}
+
+.progress {
+          background-color: white;
+          /* Background color for the progress bar */
+          border-radius: 5px;
+          overflow: hidden;
+          height: 20px;
+          /* Height of the progress bar */
+}
+
+.progress-fill {
+          background-color: #ded1d1;
+          /* Color for the filled portion */
+          height: 100%;
+          /* Fill the height of the progress bar */
+          transition: width 0.3s;
+          /* Smooth transition for width change */
+}

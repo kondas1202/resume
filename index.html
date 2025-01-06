@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Resume - Shravan Konda</title>
+          <link rel="stylesheet" href="styles.css" />
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+          <!-- Added Bootstrap JS and dependencies -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <!-- ... existing code ... -->
+          <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+          <!-- Added Font Awesome CDN -->
+          <script>
+                    function formatDate(date) {
+                              const day = String(date.getDate()).padStart(2, "0");
+                              const month = String(date.getMonth() + 1).padStart(2, "0");
+                              const year = String(date.getFullYear()).slice(-2);
+                              // Fix: Remove template literal syntax and use string concatenation
+                              return day + "-" + month + "-" + year;
+                    }
+
+                    function showProjects(event) {
+                              event.preventDefault();
+                              // Add console.log for debugging
+                              console.log("showProjects called");
+
+                              document.getElementById("work-history").style.display = "none";
+                              document.getElementById("work-history-list").style.display = "none";
+                              document.getElementById("work-experience").style.display = "none";
+                              document.getElementById("work-experience-list").style.display = "none";
+
+                              document.getElementById("dummy-data").style.display = "block";
+
+                              document.getElementById("projects-header").style.display = "none";
+                              document.getElementById("projects-link").style.display = "none";
+
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+
+
+                    function showWorkHistory(event) {
+                              event.preventDefault();
+                              // Show work history and experience
+                              document.getElementById("work-history").style.display = "block";
+                              document.getElementById("work-history-list").style.display = "block";
+                              document.getElementById("work-experience").style.display = "block";
+                              document.getElementById("work-experience-list").style.display = "block";
+
+                              // Hide dummy data
+                              document.getElementById("dummy-data").style.display = "none";
+
+                              // Show projects header and link
+                              document.getElementById("projects-header").style.display = "block";
+                              document.getElementById("projects-link").style.display = "block";
+                              // Scroll to top
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                    // Function to format the date as DD/MM/YY
+
+                    // Set the formatted date dynamically on page load
+                    window.onload = function () {
+                              document.getElementById("date").textContent = formatDate(new Date());
+                    };
+          </script>
+</head>
+
+<body>
+          <div class="container">
+                    <div class="row">
+                              <aside class="col-md-4 sidebar">
+                                        <img src="profile.jpeg" alt="Joseph L. Smith" class="profile-picture" />
+                                        <h1 class="text-center">Shravan Konda</h1>
+                                        <p>
+                                                  Full stack developer proficient in React.js, Vue.js for frontend, and
+                                                  Java, Ruby on Rails for backend
+                                        </p>
+                                        <address>
+                                                  <p><i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+                                                  <p><i class="fas fa-map-marker-alt"></i> India</p>
+                                                  <p><i class="fas fa-phone"></i> +91 9550033748</p>
+                                                  <p>
+                                                            <i class="fas fa-envelope"></i>
+                                                            konda.shravan@outlook.com
+                                                  </p>
+                                        </address>
+                                        <h5>Skills</h5>
+                                        <div class="skills-list">
+                                                  <div class="skill">
+                                                            <span>JavaScript</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 70%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>React.js</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 80%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Vue.js</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 75%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Ruby on Rails</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 60%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Spring Boot</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 65%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Node.js</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 70%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>HTML & CSS</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 85%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Git & GitHub</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 75%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Rest Full & GraphQL</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 80%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>AWS</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 80%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="skill">
+                                                            <span>Agile Methodologies</span>
+                                                            <div class="progress">
+                                                                      <div class="progress-fill" style="width: 80%;">
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </aside>
+                              <main class="col-md-8 content">
+                                        <header class="header">
+                                                  <p class="date" id="date"></p>
+                                                  <h2>Shravan Konda</h2>
+                                                  <p>Proarch</p>
+                                        </header>
+                                        <section class="body">
+                                                  <p>My Dear,</p>
+                                                  <p>Thanks for taking the time to read my application.</p>
+                                                  <p>
+                                                            Seeking a challenging and rewarding opportunity with an
+                                                            organization
+                                                            of repute which recognizes and utilizes my true potential
+                                                            while
+                                                            nurturing analytical and technical skills.
+                                                  </p>
+                                                  <h3 id="work-history">Work History</h3>
+                                                  <ul id="work-history-list" class="list-group">
+                                                            <li>
+                                                                      Developed and maintained web applications using
+                                                                      <b>React</b> for the frontend and <b>Spring
+                                                                                Boot</b> for the backend, ensuring high
+                                                                      performance and responsiveness while
+                                                                      implementing RESTful APIs and GraphQL APIs.
+                                                            </li>
+                                                            <li>
+                                                                      Collaborated with cross-functional teams to design
+                                                                      and implement features using <b>Ruby on
+                                                                                Rails</b>, enhancing user experience and
+                                                                      functionality, and reducing load times by 30%.
+                                                            </li>
+                                                            <li>
+                                                                      Utilized <b>Vue.js</b> to create dynamic user
+                                                                      interfaces, improving application usability
+                                                                      and engagement, resulting in a 25% increase in
+                                                                      user retention.
+                                                            </li>
+                                                            <li>
+                                                                      Led the migration of legacy systems to modern
+                                                                      frameworks, improving maintainability and
+                                                                      scalability of applications.
+                                                            </li>
+                                                            <li>
+                                                                      Conducted code reviews and mentored junior
+                                                                      developers, fostering a culture of continuous
+                                                                      improvement and knowledge sharing within the team.
+                                                            </li>
+                                                            <li>
+                                                                      Implemented automated testing and CI/CD pipelines,
+                                                                      reducing deployment times by 40% and
+                                                                      increasing overall code quality.
+                                                            </li>
+                                                  </ul>
+                                                  <h3 id="work-experience" class="list-group">Work Experience</h3>
+                                                  <ul id="work-experience-list">
+                                                            <li>Working as <b>“Associate Lead”</b> at Proarch,
+                                                                      Hyderabad, Jan 2024 to till now.</li>
+                                                            <li>Worked as <b>“Sr. Consultant”</b> at Infosys Ltd,
+                                                                      Hyderabad on behalf of O2F Info Solutions
+                                                                      Pvt Ltd, May 2022 to April 2023.</li>
+                                                            <li>Worked as <b>“Senior Software Engineer”</b> at Ebix Inc.
+                                                                      Hyderabad, April 2021 to April
+                                                                      2022.</li>
+                                                            <li>Worked as <b>“Senior Associate Technology”</b> at Claro
+                                                                      Software Solutions, Hyderabad,
+                                                                      February 2017 to April 19, 2021.</li>
+                                                            <li>Worked as <b>“Software Engineer”</b> at CTS, Hyderabad
+                                                                      on behalf of Trigent Software Ltd,
+                                                                      Bangalore, December 2015 to January 2017.</li>
+                                                  </ul>
+                                                  <div id="dummy-data" class="mt-4" style="display: none;">
+                                                            <h3>Projects Info</h3>
+                                                            <ul class="list-group">
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: L2O</b><br />
+                                                                                Our core priority is to deliver the
+                                                                                capabilities needed to empower sellers,
+                                                                                independent
+                                                                                software vendors, and resellers to
+                                                                                manage opportunities and land complex
+                                                                                deals that
+                                                                                require custom discounts and
+                                                                                terms.<br />
+                                                                                <b>Responsibilities:</b> Requirement
+                                                                                Analysis, Worked on underwriting
+                                                                                modules,
+                                                                                Development of UI screens and components
+                                                                                in ReactJS to use the API.<br />
+                                                                                <b>Environment:</b> React, Redux,
+                                                                                GraphQL, Node, Fluent UI, Git, Unit
+                                                                                Testing, ROR
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: UNMC</b><br />
+                                                                                UNMC is committed to the education of a
+                                                                                21st century health care workforce, to
+                                                                                finding
+                                                                                cures and treatments for devastating
+                                                                                diseases and to serving our state and
+                                                                                its
+                                                                                communities.<br />
+                                                                                <b>Environment:</b> Vue.js, ROR
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: Next GEN Firearms</b><br />
+                                                                                This application will be replaced with
+                                                                                the OLD Firearms application in Kiosk of
+                                                                                Wal-Mart
+                                                                                stores. We have optimized the code and
+                                                                                improved the speed with NodeJS and
+                                                                                VueJs. Added
+                                                                                some new features as per user
+                                                                                requirements.<br />
+                                                                                <b>Responsibilities:</b> Involved in
+                                                                                Client interaction on a regular basis to
+                                                                                understand
+                                                                                the Business of the Client, Development
+                                                                                of UI screens and components in Vue to
+                                                                                use the
+                                                                                API.<br />
+                                                                                <b>Environment:</b> ROR, RSpec,
+                                                                                JavaScript, MySQL, VueJs, CSS, HTML
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: Meijer</b><br />
+                                                                                The www.meijer.com domain is a crucial
+                                                                                digital platform for Meijer, a leading
+                                                                                retail and
+                                                                                grocery store chain in the United
+                                                                                States. This project aims to enhance the
+                                                                                user
+                                                                                experience and functionality of
+                                                                                www.meijer.com, with a focus on
+                                                                                improving online
+                                                                                shopping, customer engagement, and
+                                                                                overall website performance.<br />
+                                                                                <b>Responsibilities:</b> Develop the
+                                                                                user interface and user experience
+                                                                                (UI/UX) of the
+                                                                                e-commerce website, Create and maintain
+                                                                                React components for different parts of
+                                                                                the
+                                                                                website, such as product listings,
+                                                                                shopping cart, and checkout, Implement
+                                                                                responsive
+                                                                                design for mobile and desktop.<br />
+                                                                                <b>Environment:</b> React, Redux,
+                                                                                Typescript, Node, GraphQL
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: mPerk</b><br />
+                                                                                www.mperks.com is a vital component of
+                                                                                Meijer's loyalty program, providing
+                                                                                customers
+                                                                                with personalized discounts, rewards,
+                                                                                and exclusive offers. This project aims
+                                                                                to enhance
+                                                                                and expand the www.mperks.com domain,
+                                                                                with a focus on improving user
+                                                                                engagement,
+                                                                                personalization, and overall
+                                                                                functionality.<br />
+                                                                                <b>Responsibilities:</b> Optimize
+                                                                                website performance and user
+                                                                                interactions, Implement
+                                                                                state management using libraries like
+                                                                                Redux or React, Integrate with back-end
+                                                                                APIs for
+                                                                                data retrieval.
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: EDGE</b><br />
+                                                                                Edge is a US-based insurance industry
+                                                                                project that deals with policy
+                                                                                processing. It
+                                                                                includes end-to-end visibility of policy
+                                                                                status until issuance stage, streamlined
+                                                                                processing, and system-based
+                                                                                underwriting rules.<br />
+                                                                                <b>Responsibilities:</b> Requirement
+                                                                                Analysis, Worked on underwriting
+                                                                                modules,
+                                                                                Development of UI screens and components
+                                                                                in ReactJS to use the API.<br />
+                                                                                <b>Environment:</b> React, Redux,
+                                                                                Material UI.
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: RAP (Risk Assessment
+                                                                                          Process)</b><br />
+                                                                                RAP aims to reduce the risk factor based
+                                                                                on key factors including PRC (Procedure,
+                                                                                Rules
+                                                                                & Controllers). The process involves a
+                                                                                three-level approval system and
+                                                                                monitoring of
+                                                                                risks.<br />
+                                                                                <b>Responsibilities:</b> Analysis of
+                                                                                requirement specification, Application
+                                                                                design and
+                                                                                development, Writing stored procedures,
+                                                                                Unit testing, Integration testing,
+                                                                                Coding
+                                                                                review, Coordinating with team
+                                                                                members.<br />
+                                                                                <b>Environment:</b> Node, JavaScript,
+                                                                                ReactJS, Redux.
+                                                                      </li>
+                                                                      <li class="list-group-item">
+                                                                                <b>Project: Erental</b><br />
+                                                                                The Penske Truck Rental application
+                                                                                provides a one-stop truck rental
+                                                                                solution for both
+                                                                                commercial and household users, offering
+                                                                                a wide variety of trucks and
+                                                                                locations.<br />
+                                                                                <b>Responsibilities:</b> Product
+                                                                                development and testing, Worked in
+                                                                                Agile-Scrum Model,
+                                                                                Involved in integration of the
+                                                                                application, Development and bug fixing,
+                                                                                Customer demo,
+                                                                                Used AJAX to poll the server and
+                                                                                retrieve the latest data from the
+                                                                                database.
+                                                                      </li>
+                                                            </ul>
+                                                            </ul>
+                                                            <p>
+                                                                      <a href="#" class="btn btn-secondary"
+                                                                                onclick="showWorkHistory(event)">Show
+                                                                                Work History and
+                                                                                Experience</a>
+                                                            </p>
+                                                  </div>
+                                                  <h3 id="projects-header">Projects</h3>
+                                                  <p id="projects-link">
+                                                            <a href="#project-descriptions" class="btn btn-secondary"
+                                                                      onclick="showProjects(event)">View
+                                                                      Project Descriptions</a>
+                                                  </p>
+                                                  <p>Sincerely,</p>
+                                                  <p>Konda Shravan,</p>
+
+                                        </section>
+                              </main>
+                    </div>
+</body>
+
+</html>

@@ -155,3 +155,13 @@ body {
       .box.half-filled {
           background: linear-gradient(to right, #007bff 50%, transparent 50%);
       }
+
+      .social-link {
+          color: inherit;
+          text-decoration: none;
+      }
+      
+      .social-link:hover {
+          color: #007bff;
+          text-decoration: none;
+      }
